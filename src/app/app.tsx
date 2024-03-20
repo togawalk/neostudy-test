@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { ProductsPage } from "./pages/products"
-import { CartPage } from "./pages/cart"
+import { ProductsPage } from "@/pages/products"
+import { CartPage } from "@/pages/cart"
 
 function App() {
 
