@@ -5,8 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
+    <!-- Remove blinking on reload -->
+    <style type="text/css">
+      .bg-background {
+        --background: 0 0% 92%;
+        background-color: hsl(var(--background));
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-background">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
