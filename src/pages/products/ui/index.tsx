@@ -1,6 +1,6 @@
 export const ProductsPage = () => {
   return (
-    <div>
+    <div className="container px-[17px]">
       Products page
     </div>
   );

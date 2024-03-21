@@ -5,8 +5,10 @@ import { Outlet } from "react-router-dom";
 export const MainLayout = () => {
   return (
     <>
-      <Header />
-      <Outlet />
+      <div id="content">
+        <Header />
+        <Outlet />
+      </div>
       <Footer />
     </>
   );

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   content: [
     "./index.html",
@@ -15,6 +18,13 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
+      },
+      boxShadow: {
+        'DEFAULT': '0 0 20px 0 rgba(0, 0, 0, 0.1)',
+      },
+
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
