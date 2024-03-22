@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="container px-[17px]">
+    <footer className="container px-[17px] mt-[20px]">
       <div className="shadow bg-white p-[29px] rounded-t-[30px] flex justify-between min-h-[149px]">
         <div>
 
