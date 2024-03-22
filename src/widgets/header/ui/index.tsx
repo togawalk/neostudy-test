@@ -1,3 +1,4 @@
+import { Badge } from "@/shared/ui/badge";
 import { CartIcon } from "@/shared/ui/icons/cart";
 import { HeartIcon } from "@/shared/ui/icons/heart";
 import { Link } from "react-router-dom";
@@ -11,12 +12,16 @@ export const Header = () => {
             <h1 className="font-bold text-[25px] text-[#101010] leading-[1.2]">QPICK</h1>
           </Link>
         </div>
-        <div className="flex items-center">
-          <Link to="/cart" className="text-[#838383]">
-            <HeartIcon />
+        <div className="flex items-center space-x-4">
+          <Link to="/" className="p-2">
+            <Badge value={3}>
+              <HeartIcon className="text-[#838383]" />
+            </Badge>
           </Link>
-          <Link to="/cart">
-            <CartIcon className="text-[#838383]"/>
+          <Link to="/cart" className="p-2">
+            <Badge>
+              <CartIcon className="text-[#838383]" />
+            </Badge>
           </Link>
         </div>
       </div>
