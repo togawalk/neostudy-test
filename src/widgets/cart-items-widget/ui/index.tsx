@@ -2,6 +2,7 @@ import { useCart } from '@/app/context/cart'
 import { MinusIcon } from '@/shared/ui/icons/minus'
 import { PlusIcon } from '@/shared/ui/icons/plus'
 import { TrashCan } from '@/shared/ui/icons/trash-can'
+import { addBaseName } from '@/shared/utils'
 
 export const CartItemsWidget = () => {
   const { cartItems, removeFromCart, changeQuantity } = useCart()
@@ -10,7 +11,7 @@ export const CartItemsWidget = () => {
       {cartItems.map((item) => (
         <div className='bg-card w-full rounded-[30px] p-[18px] shadow flex gap-[24px]'>
           <div className='max-w-[150px]'>
-            <img src={item.product.image} alt='' />
+            <img src={addBaseName(item.product.image)} alt='' />
             <div className='flex gap-x-[22px] justify-center mt-[20px] items-center'>
               <button
                 className='size-[30px] bg-accent-muted rounded-full flex justify-center items-center'

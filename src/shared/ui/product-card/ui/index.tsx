@@ -1,13 +1,14 @@
 import { Product } from '@/shared/types'
 import { StarIcon } from '../../icons/star'
 import { useCart } from '@/app/context/cart'
+import { addBaseName } from '@/shared/utils'
 
 export const ProductCard = ({ product }: { product: Product }) => {
   const { addToCart } = useCart()
   return (
     <div className='bg-card rounded-[30px] shadow px-5 pb-[25px]'>
       <div className='flex justify-center py-[15px] h-[310px] items-center'>
-        <img src={product.image} alt='' className='max-w-[219px]' />
+        <img src={addBaseName(product.image)} alt='' className='max-w-[219px]' />
       </div>
       <div className='flex justify-between'>
         <div>
