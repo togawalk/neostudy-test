@@ -2,8 +2,11 @@ import { Badge } from "@/shared/ui/badge";
 import { CartIcon } from "@/shared/ui/icons/cart";
 import { HeartIcon } from "@/shared/ui/icons/heart";
 import { Link } from "react-router-dom";
+import { useCart } from "@/app/context/cart";
 
 export const Header = () => {
+  const { getCartLength } = useCart()
+
   return (
     <header className="w-[1135px] mx-auto">
       <div className="h-[60px] flex justify-between items-center">
@@ -19,7 +22,7 @@ export const Header = () => {
             </Badge>
           </Link>
           <Link to="/cart" className="p-2">
-            <Badge>
+            <Badge value={getCartLength()}>
               <CartIcon className="text-[#838383]" />
             </Badge>
           </Link>

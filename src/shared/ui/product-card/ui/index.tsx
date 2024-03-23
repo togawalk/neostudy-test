@@ -1,7 +1,10 @@
 import { Product } from "@/shared/types";
 import { StarIcon } from "../../icons/star";
+import { useCart } from "@/app/context/cart";
 
 export const ProductCard = ({ product }: { product: Product }) => {
+
+  const { cartItems, addToCart } = useCart() 
   return (
     <div className="bg-card rounded-[30px] shadow px-5 pb-[25px]">
       <div className="flex justify-center py-[15px] h-[310px] items-center">
@@ -31,7 +34,10 @@ export const ProductCard = ({ product }: { product: Product }) => {
             }
           </div>
           <div>
-            <button className="font-semibold leading-[1.2] text-black">Купить</button>
+            <button
+              onClick={() => addToCart({ product, quantity: 1 })}
+              className="font-semibold leading-[1.2] text-black">Купить</button>
+
           </div>
         </div>
       </div>
