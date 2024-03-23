@@ -26,7 +26,7 @@ export const Footer = () => {
             <Link to='/'>Условия сервиса</Link>
             <div className='text-[15px] space-x-[17px] flex font-medium pb-[7.5px]'>
               <WorldIcon className='text-[#838383]' />
-              <Link to='/' className='font-bold text-[#FFA542]'>
+              <Link to='/' className='font-bold text-accent'>
                 Рус
               </Link>
               <Link to='/'>Eng</Link>

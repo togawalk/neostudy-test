@@ -15,7 +15,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
             {product.title}
           </h4>
           <div className='text-[#838383] font-semibold flex mt-[28px] leading-[1.2] text-[17px]'>
-            <StarIcon className='text-[#FFCE7F] mr-[10px] h-[22px] w-[23px]' />{' '}
+            <StarIcon className='text-accent-muted mr-[10px] h-[22px] w-[23px]' />{' '}
             {product.rate}
           </div>
         </div>
@@ -24,15 +24,15 @@ export const ProductCard = ({ product }: { product: Product }) => {
           <div className='font-semibold items-center flex flex-col'>
             {product.priceWithDiscount ? (
               <>
-                <p className='text-[#FFA542] text-[17px] leading-[1.2]'>
+                <p className='text-accent text-[17px] leading-[1.2]'>
                   {product.priceWithDiscount} ₽
                 </p>
-                <p className='text-[#FFCE7F] text-[13px] line-through'>
+                <p className='text-accent-muted text-[13px] line-through'>
                   {product.price} ₽
                 </p>
               </>
             ) : (
-              <p className='text-[#FFA542] text-[17px] leading-[1.2]'>
+              <p className='text-accent text-[17px] leading-[1.2]'>
                 {product.price} ₽
               </p>
             )}

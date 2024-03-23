@@ -8,6 +8,11 @@
 
   --card: 0 0% 100%;
   --card-foreground: 240 16% 13%;
+
+  --accent: 31 100% 63%;
+  --accent-muted: 37 100% 75%;
+
+  --destructive: 0 66% 63%;
 }
 
 html,

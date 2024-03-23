@@ -13,7 +13,7 @@ export const CartItemsWidget = () => {
             <img src={item.product.image} alt='' />
             <div className='flex gap-x-[22px] justify-center mt-[20px] items-center'>
               <button
-                className='size-[30px] bg-[#FFCE7F] rounded-full flex justify-center items-center'
+                className='size-[30px] bg-accent-muted rounded-full flex justify-center items-center'
                 onClick={() => changeQuantity(item, -1)}
               >
                 <MinusIcon className='text-white' />
@@ -21,7 +21,7 @@ export const CartItemsWidget = () => {
               <p className='font-semibold text-[17px]'>{item.quantity}</p>
               <button
                 onClick={() => changeQuantity(item, 1)}
-                className='size-[30px] bg-[#FFCE7F] rounded-full flex justify-center items-center'
+                className='size-[30px] bg-accent-muted rounded-full flex justify-center items-center'
               >
                 <PlusIcon className='text-white' />
               </button>
@@ -37,7 +37,7 @@ export const CartItemsWidget = () => {
           </div>
           <div className='flex flex-col justify-between items-end'>
             <button onClick={() => removeFromCart(item)}>
-              <TrashCan className='text-[#DF6464]' />
+              <TrashCan className='text-destructive' />
             </button>
             <p className='text-[#1C1C27] text-[15px] font-semibold'>
               {item.product.price} ₽
