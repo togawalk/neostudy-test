@@ -13,4 +13,3 @@ export interface CartContextType {
   getCartLength: () => number
   changeQuantity: (item: CartItem, amount: number) => void
 }
-

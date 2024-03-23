@@ -1,5 +1,5 @@
-const defaultBaseName = '/neostudy-test';
+const defaultBaseName = '/neostudy-test'
 
 export function addBaseName(url: string, baseName: string = defaultBaseName) {
-  return `${baseName}${url}`;
+  return `${baseName}${url}`
 }

@@ -1,7 +1,6 @@
-import { useCart } from "@/app/context/cart"
+import { useCart } from '@/app/context/cart'
 
 export const PaymentSummaryBlock = () => {
-
   const { getCartTotalPrice } = useCart()
   return (
     <div className='max-w-[350px] w-full rounded-[30px] bg-card'>
@@ -15,5 +14,3 @@ export const PaymentSummaryBlock = () => {
     </div>
   )
 }
-
-

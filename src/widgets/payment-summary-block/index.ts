@@ -1,1 +1,1 @@
-export { PaymentSummaryBlock} from './ui'
+export { PaymentSummaryBlock } from './ui'
