@@ -3,10 +3,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
       center: true,
@@ -19,22 +16,21 @@ export default {
     },
     extend: {
       fontFamily: {
-        'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        'DEFAULT': '0 0 20px 0 rgba(0, 0, 0, 0.1)',
+        DEFAULT: '0 0 20px 0 rgba(0, 0, 0, 0.1)',
       },
 
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
         },
       },
     },
   },
   plugins: [],
 }
-
