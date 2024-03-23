@@ -12,7 +12,7 @@ export const Header = () => {
       <div className='h-[60px] flex justify-between items-center'>
         <div>
           <Link to='/'>
-            <h1 className='font-bold text-[25px] text-[#101010] leading-[1.2]'>
+            <h1 className='font-bold text-[25px] text-[#101010]'>
               QPICK
             </h1>
           </Link>

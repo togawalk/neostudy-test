@@ -10,13 +10,13 @@ export const Footer = () => {
       <div className='shadow bg-white p-[29px] rounded-t-[30px] flex justify-between min-h-[149px]'>
         <div>
           <Link to='/'>
-            <h1 className='font-bold text-[25px] text-[#101010] leading-[1.2]'>
+            <h1 className='font-bold text-[25px] text-[#101010]'>
               QPICK
             </h1>
           </Link>
         </div>
 
-        <div className='w-full max-w-[427px] leading-[1.2] flex justify-between self-center'>
+        <div className='w-full max-w-[427px] flex justify-between self-center'>
           <nav className='flex flex-col text-[17px] space-y-[10px]'>
             <Link to='/'>Избранное</Link>
             <Link to='/'>Корзина</Link>

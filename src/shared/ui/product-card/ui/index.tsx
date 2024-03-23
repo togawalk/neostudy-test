@@ -16,10 +16,10 @@ export const ProductCard = ({ product }: { product: Product }) => {
       </div>
       <div className='flex justify-between'>
         <div>
-          <h4 className='font-semibold text-[17px] leading-[1.2]'>
+          <h4 className='font-semibold text-[17px]'>
             {product.title}
           </h4>
-          <div className='text-[#838383] font-semibold flex mt-[28px] leading-[1.2] text-[17px]'>
+          <div className='text-[#838383] font-semibold flex mt-[28px] text-[17px]'>
             <StarIcon className='text-accent-muted mr-[10px] h-[22px] w-[23px]' />{' '}
             {product.rate}
           </div>
@@ -29,7 +29,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
           <div className='font-semibold items-center flex flex-col'>
             {product.priceWithDiscount ? (
               <>
-                <p className='text-accent text-[17px] leading-[1.2]'>
+                <p className='text-accent text-[17px]'>
                   {product.priceWithDiscount} ₽
                 </p>
                 <p className='text-accent-muted text-[13px] line-through'>
@@ -37,7 +37,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
                 </p>
               </>
             ) : (
-              <p className='text-accent text-[17px] leading-[1.2]'>
+              <p className='text-accent text-[17px]'>
                 {product.price} ₽
               </p>
             )}
@@ -45,7 +45,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
           <div>
             <button
               onClick={() => addToCart({ product, quantity: 1 })}
-              className='font-semibold leading-[1.2] text-black'
+              className='font-semibold text-black text-[17px]'
             >
               Купить
             </button>
