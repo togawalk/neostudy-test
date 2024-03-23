@@ -1,4 +1,4 @@
-export interface IconProps extends React.SVGProps<SVGSVGElement> {}
+import { IconProps } from "./types"
 
 export const WhatsappIcon = ({ className }: IconProps) => {
   return (
