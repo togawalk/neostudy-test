@@ -3,7 +3,7 @@ import { StarIcon } from '../../icons/star'
 import { useCart } from '@/app/context/cart'
 
 export const ProductCard = ({ product }: { product: Product }) => {
-  const { cartItems, addToCart } = useCart()
+  const { addToCart } = useCart()
   return (
     <div className='bg-card rounded-[30px] shadow px-5 pb-[25px]'>
       <div className='flex justify-center py-[15px] h-[310px] items-center'>
