@@ -36,13 +36,13 @@ export const Footer = () => {
 
         <div>
           <div className='flex items-center gap-[17.9px]'>
-            <Link to='/'>
+            <Link to='https://vk.com/neoflex_ru' target='_blank'>
               <VkIcon />
             </Link>
-            <Link to='/'>
+            <Link to='https://t.me/neoflexcareers' target='_blank'>
               <TelegramIcon />
             </Link>
-            <Link to='/'>
+            <Link to='https://wa.me/12345678' target='_blank'>
               <WhatsappIcon />
             </Link>
           </div>
