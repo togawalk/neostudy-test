@@ -3,21 +3,26 @@ import { CartPage } from '@/pages/cart'
 import { MainLayout } from '@/shared/ui/main-layout'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      element: <MainLayout />,
+      children: [
+        {
+          path: '/',
+          element: <ProductsPage />,
+        },
+        {
+          path: '/cart',
+          element: <CartPage />,
+        },
+      ],
+    },
+  ],
   {
-    element: <MainLayout />,
-    children: [
-      {
-        path: '/',
-        element: <ProductsPage />,
-      },
-      {
-        path: '/cart',
-        element: <CartPage />,
-      },
-    ],
-  },
-])
+    basename: '/neostudy-test',
+  }
+)
 
 function App() {
   return <RouterProvider router={router} />
