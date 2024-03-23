@@ -32,7 +32,7 @@ export const CartItemsWidget = () => {
             <p className='text-[#1C1C27] text-[17px] font-medium'>
               {item.product.title}
             </p>
-            <p className='text-[#AAAAAA] text-[15px] font-semibold'>
+            <p className='text-muted text-[15px] font-semibold'>
               {item.product.price} ₽
             </p>
           </div>

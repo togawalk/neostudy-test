@@ -33,6 +33,7 @@ export default {
           DEFAULT: 'hsl(var(--accent))',
           muted: 'hsl(var(--accent-muted))',
         },
+        muted: 'hsl(var(--muted-foreground))',
         destructive: 'hsl(var(--destructive))',
       },
     },
