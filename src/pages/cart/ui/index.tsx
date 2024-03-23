@@ -1,4 +1,6 @@
 import { useCart } from '@/app/context/cart'
+import { MinusIcon } from '@/shared/ui/icons/minus'
+import { PlusIcon } from '@/shared/ui/icons/plus'
 
 export const CartPage = () => {
   const { cartItems, removeFromCart, changeQuantity, getCartTotalPrice } =
@@ -14,17 +16,17 @@ export const CartPage = () => {
                 <img src={item.product.image} alt='' />
                 <div className='flex gap-x-[22px] justify-center mt-[20px] items-center'>
                   <button
-                    className='size-[30px] bg-[#FFCE7F] rounded-full'
+                    className='size-[30px] bg-[#FFCE7F] rounded-full flex justify-center items-center'
                     onClick={() => changeQuantity(item, -1)}
                   >
-                    -
+                    <MinusIcon className='text-white' />
                   </button>
                   <p className='font-semibold text-[17px]'>{item.quantity}</p>
                   <button
                     onClick={() => changeQuantity(item, 1)}
-                    className='size-[30px] bg-[#FFCE7F] rounded-full'
+                    className='size-[30px] bg-[#FFCE7F] rounded-full flex justify-center items-center'
                   >
-                    +
+                    <PlusIcon className='text-white' />
                   </button>
                 </div>
               </div>
