@@ -1,6 +1,7 @@
 import { useCart } from '@/app/context/cart'
 import { MinusIcon } from '@/shared/ui/icons/minus'
 import { PlusIcon } from '@/shared/ui/icons/plus'
+import { TrashCan } from '@/shared/ui/icons/trash-can'
 
 export const CartItemsWidget = () => {
   const { cartItems, removeFromCart, changeQuantity } = useCart()
@@ -35,7 +36,9 @@ export const CartItemsWidget = () => {
             </p>
           </div>
           <div className='flex flex-col justify-between items-end'>
-            <button onClick={() => removeFromCart(item)}>Удалить</button>
+            <button onClick={() => removeFromCart(item)}>
+              <TrashCan className='text-[#DF6464]' />
+            </button>
             <p className='text-[#1C1C27] text-[15px] font-semibold'>
               {item.product.price} ₽
             </p>
