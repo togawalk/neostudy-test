@@ -1,4 +1,3 @@
-import { Product } from '@/shared/types'
 import {
   createContext,
   useState,
@@ -6,20 +5,7 @@ import {
   ReactNode,
   useContext,
 } from 'react'
-
-interface CartItem {
-  product: Product
-  quantity: number
-}
-
-interface CartContextType {
-  cartItems: CartItem[]
-  addToCart: (item: CartItem) => void
-  removeFromCart: (item: CartItem) => void
-  getCartTotalPrice: () => number
-  getCartLength: () => number
-  changeQuantity: (item: CartItem, amount: number) => void
-}
+import { CartContextType, CartItem } from './types'
 
 const CartContext = createContext<CartContextType | undefined>(undefined)
 
