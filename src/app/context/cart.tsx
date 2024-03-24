@@ -41,7 +41,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     )
     if (isItemInCart) {
       const updatedQuantity = isItemInCart?.quantity + amount
-      if (updatedQuantity >= 1 && updatedQuantity <= 99) {
+      if (updatedQuantity >= 1) {
         setCartItems(
           cartItems.map((cartItem) =>
             cartItem.product.id === item.product.id
