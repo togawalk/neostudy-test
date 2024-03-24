@@ -28,7 +28,7 @@ export const CartItemsWidget = () => {
               </button>
             </div>
           </div>
-          <div className='self-center space-y-[12px] flex-1'>
+          <div className='self-center space-y-[12px] flex-1 pb-[30px]'>
             <p className='text-[#1C1C27] text-[17px] font-medium'>
               {item.product.title}
             </p>
@@ -37,8 +37,8 @@ export const CartItemsWidget = () => {
             </p>
           </div>
           <div className='flex flex-col justify-between items-end'>
-            <button onClick={() => removeFromCart(item)}>
-              <TrashCan className='text-destructive' />
+            <button onClick={() => removeFromCart(item)} className='group'>
+              <TrashCan className='text-destructive group-hover:text-red-500 transition-colors ease-in-out' />
             </button>
             <p className='text-[#1C1C27] text-[15px] font-semibold'>
               {item.product.price} ₽

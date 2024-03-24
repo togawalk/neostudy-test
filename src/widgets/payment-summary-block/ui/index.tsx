@@ -8,7 +8,7 @@ export const PaymentSummaryBlock = () => {
         <p className='text-[15px] font-semibold uppercase'>итого</p>
         <p className='text-[15px] font-semibold'>₽ {getCartTotalPrice()}</p>
       </div>
-      <button className='bg-black text-white font-semibold text-[17px] rounded-[30px] px-[14px] py-[22px] w-full'>
+      <button className='bg-black text-white font-semibold text-[17px] rounded-[30px] px-[14px] py-[22px] w-full hover:bg-black/70 transition-colors ease-in-out'>
         Перейти к оформлению
       </button>
     </div>

@@ -16,9 +16,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
       </div>
       <div className='flex justify-between'>
         <div>
-          <h4 className='font-semibold text-[17px]'>
-            {product.title}
-          </h4>
+          <h4 className='font-semibold text-[17px]'>{product.title}</h4>
           <div className='text-[#838383] font-semibold flex mt-[28px] text-[17px]'>
             <StarIcon className='text-accent-muted mr-[10px] h-[22px] w-[23px]' />{' '}
             {product.rate}
@@ -37,9 +35,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
                 </p>
               </>
             ) : (
-              <p className='text-accent text-[17px]'>
-                {product.price} ₽
-              </p>
+              <p className='text-accent text-[17px]'>{product.price} ₽</p>
             )}
           </div>
           <div>
