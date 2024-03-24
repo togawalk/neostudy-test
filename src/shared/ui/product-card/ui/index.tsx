@@ -6,8 +6,8 @@ import { addBaseName } from '@/shared/utils'
 export const ProductCard = ({ product }: { product: Product }) => {
   const { addToCart } = useCart()
   return (
-    <div className='bg-card rounded-[30px] shadow px-5 pb-[25px]'>
-      <div className='flex justify-center py-[15px] h-[310px] items-center'>
+    <div className='rounded-[30px] bg-card px-5 pb-[25px] shadow'>
+      <div className='flex h-[310px] items-center justify-center py-[15px]'>
         <img
           src={addBaseName(product.image)}
           alt=''
@@ -16,32 +16,32 @@ export const ProductCard = ({ product }: { product: Product }) => {
       </div>
       <div className='flex justify-between'>
         <div>
-          <h4 className='font-semibold text-[17px]'>{product.title}</h4>
-          <div className='text-[#838383] font-semibold flex mt-[28px] text-[17px]'>
-            <StarIcon className='text-accent-muted mr-[10px] h-[22px] w-[23px]' />{' '}
+          <h4 className='text-[17px] font-semibold'>{product.title}</h4>
+          <div className='mt-[28px] flex text-[17px] font-semibold text-[#838383]'>
+            <StarIcon className='mr-[10px] h-[22px] w-[23px] text-accent-muted' />{' '}
             {product.rate}
           </div>
         </div>
 
         <div className='flex flex-col justify-between'>
-          <div className='font-semibold items-center flex flex-col'>
+          <div className='flex flex-col items-center font-semibold'>
             {product.priceWithDiscount ? (
               <>
-                <p className='text-accent text-[17px]'>
+                <p className='text-[17px] text-accent'>
                   {product.priceWithDiscount} ₽
                 </p>
-                <p className='text-accent-muted text-[13px] line-through'>
+                <p className='text-[13px] text-accent-muted line-through'>
                   {product.price} ₽
                 </p>
               </>
             ) : (
-              <p className='text-accent text-[17px]'>{product.price} ₽</p>
+              <p className='text-[17px] text-accent'>{product.price} ₽</p>
             )}
           </div>
           <div>
             <button
               onClick={() => addToCart({ product, quantity: 1 })}
-              className='font-semibold text-black text-[17px]'
+              className='text-[17px] font-semibold text-black'
             >
               Купить
             </button>
